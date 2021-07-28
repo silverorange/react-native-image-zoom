@@ -384,7 +384,7 @@ export default class ImageViewer extends React.Component<ImageZoomProps, ImageZo
           this.zoomCurrentDistance = Number(diagonalDistance.toFixed(1));
 
           if (this.zoomLastDistance !== null) {
-            const distanceDiff = (this.zoomCurrentDistance - this.zoomLastDistance) / 200;
+            const distanceDiff = (this.zoomCurrentDistance - this.zoomLastDistance) / 100;
             let zoom = this.scale + distanceDiff;
 
             if (zoom < (this.props.minScale || 0)) {
