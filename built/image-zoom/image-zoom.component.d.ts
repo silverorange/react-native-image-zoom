@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { LayoutChangeEvent } from 'react-native';
 import { ICenterOn, ImageZoomProps, ImageZoomState } from './image-zoom.type';
-export default class ImageViewer extends React.Component<ImageZoomProps, ImageZoomState> {
+export default class ImageViewer extends React.Component<React.PropsWithChildren<ImageZoomProps>, ImageZoomState> {
     static defaultProps: ImageZoomProps;
     state: ImageZoomState;
     private lastPositionX;
