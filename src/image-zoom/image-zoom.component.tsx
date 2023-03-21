@@ -3,7 +3,7 @@ import { Animated, LayoutChangeEvent, PanResponder, StyleSheet, View } from 'rea
 import styles from './image-zoom.style';
 import { ICenterOn, ImageZoomProps, ImageZoomState } from './image-zoom.type';
 
-export default class ImageViewer extends React.Component<ImageZoomProps, ImageZoomState> {
+export default class ImageViewer extends React.Component<React.PropsWithChildren<ImageZoomProps>, ImageZoomState> {
   public static defaultProps = new ImageZoomProps();
   public state = new ImageZoomState();
 
